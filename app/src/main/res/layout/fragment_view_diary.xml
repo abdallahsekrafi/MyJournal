@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    tools:context=".fragments.NewDiaryFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/img_diary_bm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/blue_bm"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:layout_gravity="start|left"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_view_diary_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monday"
+                android:includeFontPadding="false"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_view_diary_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textColor="@android:color/white"
+                android:textSize="50sp"
+                android:text="29"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_view_diary_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jun, 2018"
+                android:includeFontPadding="false"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tv_view_diary_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:00"
+                android:includeFontPadding="false"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_view_diary_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="28dp"
+                    android:textColor="@color/colorPrimary"
+                    android:hint="@string/new_diary_title"/>
+            <TextView
+                android:id="@+id/tv_new_diary_summary"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="28dp"
+                android:layout_weight="1"
+                android:gravity="start|left"
+                android:hint="@string/new_diary_summary"/>
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nav_view_diary_button"
+        android:layout_gravity="bottom"
+        design:itemTextColor="@android:color/white"
+        design:itemIconTint="@android:color/white"
+        android:background="@color/colorPrimaryDark"
+        design:menu="@menu/menu_popup">
+
+    </android.support.design.widget.BottomNavigationView>
+</android.support.design.widget.CoordinatorLayout>

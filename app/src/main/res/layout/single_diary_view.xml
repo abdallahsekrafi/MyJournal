@@ -1,0 +1,105 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/book_mark"
+        android:scaleType="fitXY"
+        android:src="@drawable/blue_bm" />
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/diary_container"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp">
+            <TextView
+                android:id="@+id/tv_entries_item_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mardi"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/Tv_entries_item_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Tv_entries_item_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Jun. 2018"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="14dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="left|start"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/Tv_entries_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="12:22"
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/Tv_entries_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:text="bonjour"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="16dp"  />
+
+            <TextView
+                android:id="@+id/Tv_entries_item_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="un premier plan pour tester, un premier plan pour tester, un premier plan pour tester, un premier plan pour tester"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/button_option_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_menu_option"
+        android:background="@null"/>
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

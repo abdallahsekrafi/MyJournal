@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MyJournal</string>
+
+    <string name="email_login_hint">Email</string>
+    <string name="password_login_hint">Password</string>
+    <string name="sign_in_login_button">Sign In</string>
+    <string name="login_with_google_account">Use Google account</string>
+    <string name="create_new_account_login">Create new account ?</string>
+    <string name="reset_pwd_link">Forgot password ?</string>
+    <string name="system_error">System error please try again !</string>
+    <string name="create_account_button">Create Account</string>
+    <string name="login_with_exist_account">Sign in with existing account !</string>
+    <string name="ok_button">OK</string>
+    <string name="message_email_login">Invalid email address !</string>
+    <string name="check_your_mailbox">Check your mailbox</string>
+    <string name="message_password_login">Password must be up to 3 characters !</string>
+    <string name="login_failed">Sign in failed please try again !</string>
+    <string name="activate_your_account">Activate Your Account please !</string>
+    <string name="success_account_create">Success account created, check your mailbox and sign in</string>
+    <string name="failed_account_create">Failed account created, please try again</string>
+    <string name="log_out_menu">Disconnect</string>
+    <string name="new_diary_menu">New diary</string>
+    <string name="settings_menu">Settings</string>
+    <string name="cancel_menu">Cancel</string>
+    <string name="save_menu">Save</string>
+    <string name="popup_delete_menu">Delete</string>
+    <string name="popup_edit_menu">Edit</string>
+    <string name="new_diary_title_summary">Title and Summary is required !</string>
+    <string name="empty_data_tv">Click New diary to add items </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_diary_title">Diary Title</string>
+    <string name="new_diary_summary">Diary Summary</string>
+</resources>
